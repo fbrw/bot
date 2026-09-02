@@ -127,7 +127,7 @@ body{
 
 .rodape {
   border-top: 0.4px solid #FFF2E7;
-  padding: 32px;
+  padding: 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -136,7 +136,7 @@ body{
 
 }
 .rodape-imagem {
-  height: 48px;
+  height: 100px;
 
 }
 
