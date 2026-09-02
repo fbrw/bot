@@ -1,0 +1,246 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+/*
+.righteous-regular {
+  font-family: "Righteous", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.sarala-regular {
+  font-family: "Sarala", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.sarala-bold {
+  font-family: "Sarala", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body{
+    font-size: 100%;
+    position: relative;
+    background: linear-gradient(68.15deg, #366294 16.62%, #1353d2 85.61%);
+}
+
+#hamburger {
+  display: none;
+}
+
+.cabecalho {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-around;
+  padding: 24px;
+}
+.cabecalho-imagem {
+  height: 65px;
+  filter:drop-shadow( 4px 5px 4px rgba(0, 0, 0, 0.25)); 
+}
+.cabecalho-menu {
+  display: flex;
+  gap:32px;
+}
+.cabecalho-item {
+  font-family: "Sarala", sans-serif;
+  color: #FFF2E7;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+}
+.cabecalho-item:hover {
+  color:  #54e0aa ;
+}
+
+.conteudo {
+  border-top: 0.4px solid gray;
+  margin-bottom: 48px;
+}
+.coteudo-principal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.conteudo-principal-escrito-titulo {
+   font-family: "Righteous", sans-serif;
+   font-size: 64px;
+   padding: 20px;
+   color: whitesmoke;  
+}
+.conteudo-principal-escrito-subtitulo {
+   font-family: "Sarala", sans-serif;
+   color: whitesmoke;
+   font-size: 24px;
+   padding-left: 20px;
+
+}
+.conteudo-principal-escrito-botao {
+  font-family: "Sarala", sans-serif;
+  font-size: 24px;
+  width: 180px;
+  height: 60px;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+  margin: 20px;
+  cursor: pointer;
+}
+.conteudo-principal-escrito-botao:hover {
+  background-color:  #54e0aa89 ;
+}
+.conteudo-principal-imagem {
+  height: 430px;
+}
+
+.conteudo-secundario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:24px;
+  margin-top: 45px;
+}
+.conteudo-secundario-titulo {
+  border-top: 0.4px solid #FFF2E7;
+  padding-top: 48px;
+  font-family: "Righteous", sans-serif;
+  color: whitesmoke;
+  margin-bottom: 16px;
+}
+.conteudo-secundario-paragrafo {
+  font-family: "Sarala", sans-serif;
+  color: whitesmoke;
+  font-weight:350;
+}
+
+.rodape {
+  border-top: 0.4px solid #FFF2E7;
+  padding: 32px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+
+}
+.rodape-imagem {
+  height: 48px;
+
+}
+
+@media (max-width: 767px) {
+  .cabecalho {
+    display: flex;
+    flex-wrap: wrap; /* Permite que o menu desça para a segunda linha */
+    justify-content: space-between;
+  
+  }
+
+  .cabecalho-imagem {  
+    height: 55px;
+  }
+
+  #hamburger {
+    display: block;
+    cursor: pointer;
+    color: whitesmoke;
+    font-size: 36px;
+  }
+
+  .cabecalho-menu {
+    display: none; 
+    width: 100%; /* Toma a linha toda e empurra o body para baixo */
+    flex-direction: column;
+    text-align: center;
+    padding-top: 20px;
+    gap: 16px;
+  }
+
+  .cabecalho-menu.ativo {
+    display: flex;
+  }
+
+  .conteudo-principal-escrito-titulo {
+    font-size: 50px;
+    padding: 20px;
+  }
+  .conteudo-principal-escrito-subtitulo {
+    font-size: 20px;
+  }
+  .conteudo-principal-imagem {
+    height: 200px;
+  }
+  .conteudo-principal-escrito-botao {
+    width: 105px;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 13px;
+  }
+
+  .conteudo-secundario-paragrafo {
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/*@media (max-width: 767px) {
+  .cabecalho{
+    display: flex;
+    justify-content: space-between;
+  }
+  .cabecalho-menu {
+    display: flex;
+    flex-direction: column;
+    text-align: ;
+  
+  }
+  .cabecalho-imagem {  
+    height: 55px;
+  }
+  #hamburger {
+    display: block;
+  }
+
+  .conteudo-principal-escrito-titulo {
+   font-size: 50px;
+   padding: 20px;
+}
+  .conteudo-principal-escrito-subtitulo {
+    font-size: 20px;
+}
+  .conteudo-principal-imagem {
+    height: 200px;
+}
+.conteudo-principal-escrito-botao {
+  width: 105px;
+  height: 40px;
+  font-size: 15px;
+  border-radius: 13px;
+
+}
+
+.conteudo-secundario-paragrafo {
+  font-size: 20px;
+
+  padding-left: 20px;
+  padding-right: 20px;
+}
+  
+
+  
+}*/
+
+
